@@ -100,20 +100,20 @@ header{
 /*Keyframes for animation*/
 @-webkit-keyframes logo_grow{
   /*Your code here.*/
-  from {
+  0% {
     width: 25px; 
     opacity: 0;}
-  to {
+  100% {
     width: 420px;
     opacity: 1;}
 }
 
 @keyframes logo_grow{
   /*Your code here.*/
-  from {
+  0% {
     width: 25px; 
     opacity: 0;}
-  to {
+  100% {
     width: 420px; 
     opacity: 1;}
 } 
@@ -150,7 +150,6 @@ header{
 @media screen and (prefers-reduced-motion: reduce) {
   #logo {
     animation: none;
-    -webkit-animation: none;
   }
 }
 
