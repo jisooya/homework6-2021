@@ -5,14 +5,14 @@ body{
   padding: 0;
   font-size: 16pt; 
   font-family: "Raleway", sans-serif;
-  background-image: url(../images/concrete_seamless.png);
+  background-image: url("../images/concrete_seamless.png");
 }
 
 /*Requirement 2*/
 header{
   background: #fff;
-  border-bottom: 3px solid #50C7C7;
-  /*Your  code here again.*/
+  border-bottom: 3px solid #568d8d;
+  /*Your code here again.*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,7 +27,6 @@ header{
   justify-content: center;
   align-items: center;
 }
-
 
 /*Requirement 4*/
 .price{
@@ -93,9 +92,9 @@ header{
    animation-name: logo_grow;
    animation-duration: 15s;
    animation-iteration-count: 1;
-   -webkit-animation-name: logo_grow;
+   /* -webkit-animation-name: logo_grow;
    -webkit-animation-duration: 15s;
-   -webkit-animation-iteration-count: 1;
+   -webkit-animation-iteration-count: 1; */
 }
 
 /*Keyframes for animation*/
@@ -111,8 +110,12 @@ header{
 
 @keyframes logo_grow{
   /*Your code here.*/
-  from {width: 25px; opacity: 0;}
-  to {width: 420px; opacity: 1;}
+  from {
+    width: 25px; 
+    opacity: 0;}
+  to {
+    width: 420px; 
+    opacity: 1;}
 } 
 
 @media screen and (min-width: 850px){
@@ -120,16 +123,13 @@ header{
   /*Requirement 10*/
   header{
     /*Your code here again.*/  
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
   }
 
   /*Requirement 10*/
   .nav_links{
     /*Your code here again.*/  
-    display: flex;
     flex-direction: row;
     justify-content: flex-end;
   }
@@ -137,7 +137,6 @@ header{
   /*Requirement 11*/
   .package {
     /*Your code here again.*/
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-self: center;
